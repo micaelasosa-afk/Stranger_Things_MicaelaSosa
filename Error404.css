@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(rgba(224, 56, 56, 0.4), rgba(12, 0, 0, 0.103)), url('../img/Upside_Down.png');
+    background: linear-gradient(rgba(224, 56, 56, 0.4), rgba(12, 0, 0, 0.103)), url('Upside_Down.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

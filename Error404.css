@@ -1,0 +1,44 @@
+.upside-down-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(224, 56, 56, 0.4), rgba(12, 0, 0, 0.103)), url('../img/Upside_Down.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+.error h1 {
+    font-size: 7rem;
+    color: var(--color-neon-rojo);
+    text-shadow: 0 0 20px rgba(146, 35, 38, 0.8);
+    line-height: 1;
+}
+.error h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.error p {
+    color: #aaa;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
+.regresar {
+    display: inline-block;
+    padding: 12px 24px;
+    color: var(--color-texto);
+    border: 2px solid var(--color-neon-rojo);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.regresar:hover {
+    background-color: var(--color-neon-rojo);
+    box-shadow: 0 0 15px var(--color-neon-rojo);
+    transform: scale(1.05);
+}

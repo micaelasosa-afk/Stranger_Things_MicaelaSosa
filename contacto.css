@@ -1,0 +1,175 @@
+.contacto-main {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.formulario-seccion, 
+.confirmacion-seccion {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.formulario-seccion h1 {
+    color: var(--color-neon-rojo);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.formulario-seccion p {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+.form-contacto fieldset {
+    border: 2px solid #222;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgba(20, 20, 23, 0.5);
+    margin-top: 10px;
+}
+
+.form-contacto legend span {
+    color: var(--color-texto);
+    padding: 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.campo-grupo label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.campo-grupo input, 
+.campo-grupo textarea {
+    padding: 12px;
+    background-color: #000;
+    border: 1px solid #333;
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: var(--color-neon-rojo);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    color: var(--color-texto);
+    border: 2px solid var(--color-neon-rojo);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.btn-enviar:hover {
+    background-color: var(--color-neon-rojo);
+    box-shadow: 0 0 15px var(--color-neon-rojo);
+}
+.tarjeta-exito {
+    background: var(--color-glass);
+    border: 2px solid #28a745; 
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.2);
+}
+
+.tarjeta-exito h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.tarjeta-exito p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn-volver, .btn-nuevo-reporte {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-volver {
+    border: 2px solid var(--color-texto);
+    color: var(--color-texto);
+}
+
+.btn-volver:hover {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+.btn-nuevo-reporte {
+    border: 2px solid var(--color-neon-rojo);
+    color: var(--color-texto);
+}
+
+.btn-nuevo-reporte:hover {
+    background-color: var(--color-neon-rojo);
+    box-shadow: 0 0 10px var(--color-neon-rojo);
+}
+
+.confirmacion-seccion {
+    display: none; 
+}
+
+.formulario-seccion {
+    display: block;
+}
+
+#exito:target {
+    display: block !important;
+}
+
+.contacto-main:has(#exito:target) #formulario-bloque {
+    display: none !important;
+}
+.nav-portal {
+    background-color: transparent;
+    border: 2px solid #e50914; /* Rojo característico */
+    color: #e50914 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(229, 9, 20, 0.4);
+}
+
+.nav-portal:hover {
+    background-color: #e50914;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px #e50914, 0 0 25px rgba(229, 9, 20, 0.6);
+    transform: scale(1.05);
+}
